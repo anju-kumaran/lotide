@@ -1,14 +1,17 @@
-const assertEqual = function(actual, expected) {
+/*const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
   } else {
     console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
   }
-};
+};*/
 const tail = function(inputArray) {
   return inputArray.slice(1);
 };
 
+module.exports = tail;
+
+/*
 // Test Case 1: Check the returned array elements
 const result = tail(["Hello", "Lighthouse", "Labs"]);
 assertEqual(result.length, 2); // ensure we get back two elements
@@ -27,4 +30,4 @@ assertEqual(singleArr.length, 0); // 0 elements!
 // Test Case 4:  Empty array should yield an empty array for its tail
 const emptyArr = tail([]); 
 assertEqual(emptyArr.length, 0); // 0 elements!
-
+*/
